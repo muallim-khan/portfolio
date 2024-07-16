@@ -1,0 +1,123 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+nav ul{
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    flex-direction: row;
+   
+}
+ul a{
+    text-decoration: none;
+    margin-left: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+}
+h1{
+    text-align: center;
+    font-weight: 400;
+    font-family: 'Courier New', Courier, monospace;
+}
+.container{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    margin-top: 40px;
+}
+.form, .contact{
+    width: 40%;
+    height: 70vh;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: right;
+    box-shadow:  0 5px 10px 0 rgba(0, 0, 0, 0.3), 0 7px 21px 0 rgba(0, 0, 0, 0.20);
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+input{
+    width: 350px;
+    height: 30px;
+    margin-top: 30px;
+}
+textarea{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.btn{
+    width: 200px;
+    height: 40px;
+    font-size: large;
+    border-radius: 30px;
+    outline: none;
+    margin: 0 auto;
+}
+.i{
+    width: 70px;
+    height: 50px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+.i p{
+    text-align: left;
+}
+.icon{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8vh;
+    margin-bottom: 8vh;
+    width: 150%;
+    
+}
+.icon img{
+    float: right;
+    width: 20px;
+    height: 30px;
+}
+
+
+
+/* mobile */
+
+
+@media only screen and (max-width: 600px) {
+ 
+    nav ul{
+        font-size:small ;
+        font-weight: 900;
+        background-color: aqua;
+        margin-left: 20px;
+    }
+ 
+    .container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .i{
+    justify-content: space-evenly;
+  }
+  .form{
+    width: 80%;
+    margin: 0 auto;
+  }
+  .conainer{
+    width: 100%;
+  }
+  .contact{
+    margin-top: 30vh;
+    justify-content: space-evenly;
+  }
+}
